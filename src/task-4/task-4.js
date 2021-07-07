@@ -13,15 +13,10 @@ function renderCartItem(item) {
 
 export default class ShoppingCart {
   constructor(rootEl) {
-    console.log();
     this.cartEl = rootEl.querySelector('.shopping-cart-list');
-    // <ul class="shopping-cart-list"></ul>
     this.totalEl = rootEl.querySelector('.total');
-    // <span class="total">0</span>
     this.emptyCartEl = rootEl.querySelector('.empty-cart-message');
-    //<p class="empty-cart-msg">U cart is empty</p>;
     this.removeAllEl = rootEl.querySelector('.remove-all');
-    //button remove all
     this.addEventListeners();
   }
 
