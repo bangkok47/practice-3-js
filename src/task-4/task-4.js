@@ -76,7 +76,7 @@ export default class ShoppingCart {
     const qty = itemLi.querySelector('span.item-qty');
     const price = itemLi.querySelector('span.item-price');
 
-    const currentQty = parseInt(itemLi.dataset.itemTotal, 10);
+    const currentQty = parseInt(itemLi.dataset.itemQty, 10);
 
     itemLi.dataset.itemTotal = parseInt(itemLi.dataset.itemTotal, 10) + item.price;
 
